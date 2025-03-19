@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="my.jpg" alt="Logo" class="logo-img">
+                MarcelCTG
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html">Community servic Bot</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="background-image">
+            <h2>Rainbow six sieg</h2>
+            <div class="film-menu">
+                <div class="film-item" onclick="openVideoMenu('Video 1', 'rainbow-six-sieg.jpg', 'In Diesen geht es um Rainbow six sieg und in den spiel muss man verteitigen oder angreifen und Ich als MarcelCTG youtuber wünschen dir schönen video anschaun', '1')">
+                    <img src="rainbow-six-sieg.jpg" alt="Video 1">
+                    <p>Rainbow six sieg</p>
+                </div>
+            </div>
+
+            
+
+            <div id="video-menu" class="video-menu" style="display: none;">
+                <div class="video-menu-header">
+                    <img id="menu-thumbnail" src="" alt="Thumbnail" style="width: 150px; height: 100px; object-fit: cover;">
+                    <div>
+                        <h3 id="menu-title"></h3>
+                        <p id="menu-description"></p>
+                    </div>
+                </div>
+                <div class="video-menu-options">
+                    <div>
+                        <label for="staffel-select">Staffel:</label>
+                        <select id="staffel-select" onchange="updateVideoFrame()">
+                            <!-- Staffel options will be dynamically populated -->
+                        </select>
+                    </div>
+                    <div>
+                        <label for="folge-select">Folge:</label>
+                        <select id="folge-select" onchange="updateVideoFrame()">
+                            <!-- Folge options will be dynamically populated -->
+                        </select>
+                    </div>
+                </div>
+                <iframe id="video-frame" src="" frameborder="0" allowfullscreen style="width: 80%; height: 400px; margin-top: 20px;"></iframe>
+                <button onclick="closeVideoMenu()">Schließen</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://discord.gg/XM6gNqMwZp" style="text-decoration: none; color: white; background-color: #7289da; padding: 10px 20px; border-radius: 5px; display: inline-block;">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" alt="Discord" style="width: 20px; vertical-align: middle; margin-right: 5px;">
+            Join auf MarcelCTG server
+        </a>
+    </footer>
+    
+</body>
+</html>
