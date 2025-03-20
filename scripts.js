@@ -32,8 +32,8 @@ const videoUrls = {
         }
     },
     "Video 2": {
-        "2": {
-            "4": "https://www.youtube.com/embed/specialVideo2"
+        "0": {
+            "1": "https://www.youtube.com/embed/specialVideo2"
         }
     },
     "Video 3": {
